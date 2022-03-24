@@ -1,0 +1,70 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas: 
+    "header"
+    "content";
+    min-height: 100vh;
+    min-width: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    background-color: #fafaf9;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.content{
+    grid-area: content;
+    background-color: #a8a29e;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eff6ff;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    border: 0;
+}
+
+#add-book {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#add-book-form {
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    min-height: 200px;
+    min-width: 400px;
+    background-color: aquamarine;
+    visibility: hidden;
+}
